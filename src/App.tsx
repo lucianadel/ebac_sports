@@ -1,8 +1,26 @@
 import { useEffect, useState } from 'react'
+import React from 'react'
+import ReactDOM from 'react-dom/client'
 import Header from './components/Header'
 import Produtos from './containers/Produtos'
-
 import { GlobalStyle } from './styles'
+
+import { Provider } from 'react-redux'
+import { store } from './store'
+
+const rootElement = document.getElementById('root')
+if (rootElement) {
+  const root = ReactDOM.createRoot(rootElement)
+  root.render(
+    <React.StrictMode>
+      <Provider store={store}>
+        <App />
+      </Provider>
+    </React.StrictMode>
+  )
+} else {
+  console.error("Element with ID 'root' not found.")
+}
 
 export type Produto = {
   id: number
