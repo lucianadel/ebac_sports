@@ -1,9 +1,8 @@
-import * as S from './styles'
-
-import { Produto } from '../../App'
-
-import cesta from '../../assets/cesta.png'
-import { paraReal } from '../Produto'
+/* eslint-disable prettier/prettier */
+import * as S from './styles';
+import { Produto } from '../../types'; // Importe de types.ts
+import cesta from '../../assets/cesta.png';
+import { paraReal } from '../Produto';
 
 type Props = {
   itensNoCarrinho: Produto[]
@@ -21,7 +20,7 @@ const Header = ({ itensNoCarrinho, favoritos }: Props) => {
       <h1>EBAC Sports</h1>
       <div>
         <span>{favoritos.length} favoritos</span>
-        <img src={cesta} />
+        <img src={cesta} alt="Cesta" />
         <span>
           {itensNoCarrinho.length} itens, valor total: {paraReal(valorTotal)}
         </span>

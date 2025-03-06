@@ -1,6 +1,21 @@
 {
   "editor.formatOnSave": false,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  }
+    "source.fixAll.eslint": "explicit"
+  },
+  "cSpell.words": [
+    "adicionado",
+    "adicionar",
+    "Capa",
+    "Carrinho",
+    "Comprar",
+    "EBAC",
+    "esta",
+    "favoritar",
+    "favoritos",
+    "fron",
+    "Importe",
+    "itens",
+    "Produto"
+  ]
 }

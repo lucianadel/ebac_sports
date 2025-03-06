@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { Produto as ProdutoType } from '../../App'
 import * as S from './styles'
 
