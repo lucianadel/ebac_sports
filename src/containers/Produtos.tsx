@@ -8,9 +8,10 @@ type Props = {
   produtos: Produto[];
   favoritos: Produto[];
   favoritar: (produto: Produto) => void;
+  // aoComprar: (produto: Produto) => void;
 };
 
-const ProdutosComponent = ({ produtos, favoritos, favoritar }: Props) => {
+const ProdutosComponent = ({ produtos, favoritos, favoritar, }: Props) => {
   const produtoEstaNosFavoritos = (produto: Produto) => {
     return favoritos.some((f) => f.id === produto.id);
   };
@@ -22,16 +23,9 @@ const ProdutosComponent = ({ produtos, favoritos, favoritar }: Props) => {
           estaNosFavoritos={produtoEstaNosFavoritos(produto)}
           key={produto.id}
           produto={produto}
-          favoritar={favoritar} aoComprar={function (_produto: async (async function for (let index = 0; index < Array.length; index++) {
-            const element = array[index];
-            name
-          }(params:type) {
-            params
-          }:type) => {
-            ProdutoType
-          }): void {
-            throw new Error('Function not implemented.');
-          } }        />
+          favoritar={favoritar}
+          // aoComprar={aoComprar}
+        />
       ))}
     </S.Produtos>
   );

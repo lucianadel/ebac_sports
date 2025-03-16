@@ -5,10 +5,15 @@ import App from './App';
 import { Provider } from 'react-redux';
 import { store } from './store';
 
-const newLocal = document.getElementById('root');
-const root = ReactDOM.createRoot(newLocal);
-root.render(
-  <Provider store={store}>
-    <App />
-  </Provider>
-);
+const rootElement = document.getElementById('root');
+
+if (rootElement) {
+  const root = ReactDOM.createRoot(rootElement);
+  root.render(
+    <Provider store={store}>
+      <App />
+    </Provider>
+  );
+} else {
+  console.error('Elemento root não encontrado.');
+}

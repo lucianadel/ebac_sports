@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-
 import { cores } from '../../styles'
 
 export const Produto = styled.div``
@@ -44,6 +43,7 @@ export const Tag = styled.span`
   font-weight: 700;
   color: #fff;
 `
+
 export const Plataformas = styled.ul`
   display: flex;
   flex-wrap: wrap;
@@ -60,7 +60,10 @@ export const Plataformas = styled.ul`
     font-weight: bold;
   }
 `
-export const BtnComprar = styled.button`
+
+type BtnComprarProps = React.ButtonHTMLAttributes<HTMLButtonElement>
+
+export const BtnComprar = styled.button<BtnComprarProps>`
   display: block;
   width: 100%;
   background-image: linear-gradient(
