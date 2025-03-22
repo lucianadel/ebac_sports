@@ -12,7 +12,7 @@ if (rootElement) {
   root.render(
     <Provider store={store}>
       <App />
-    </Provider>
+    </Provider>,
   );
 } else {
   console.error('Elemento root não encontrado.');

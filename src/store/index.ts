@@ -9,7 +9,7 @@ import cartReducer from './reducers/cart';
 export const store = configureStore({
   reducer: {
     carrinho: carrinhoReducer,
-    cart: cartReducer
+    cart: cartReducer,
   },
 });
 
